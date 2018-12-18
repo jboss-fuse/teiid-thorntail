@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.teiid</groupId>
     <artifactId>thorntail-examples</artifactId>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.4.fuse-730002</version>
     <relativePath>../</relativePath>
   </parent>
   
