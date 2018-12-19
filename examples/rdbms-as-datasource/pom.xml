@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.teiid</groupId>
     <artifactId>thorntail-examples</artifactId>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.4.fuse-730003</version>
     <relativePath>../</relativePath>
   </parent>
     
@@ -15,7 +15,7 @@
 	
 	<properties>
 		<version.thorntail>2.2.0.Final</version.thorntail>
-		<version.thorntail.teiid>1.0.4-SNAPSHOT</version.thorntail.teiid>
+		<version.thorntail.teiid>1.0.4.fuse-730003</version.thorntail.teiid>
 		<mysql.version>5.1.6</mysql.version>
     </properties>
 	

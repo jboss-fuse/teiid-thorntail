@@ -12,7 +12,7 @@
 
   <groupId>org.teiid</groupId>
   <artifactId>thorntail-parent</artifactId>
-  <version>1.0.4-SNAPSHOT</version>
+  <version>1.0.4.fuse-730003</version>
   <name>Teiid Thorntail Parent</name>
   <description>Teiid Thorntail Parent</description>
   <packaging>pom</packaging>
@@ -59,20 +59,9 @@
     </developer>
   </developers>
 
-  <distributionManagement>
-    <repository>
-      <id>oss.sonatype.org</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-    <snapshotRepository>
-      <id>oss.sonatype.org</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
-
   <properties>
     <version.thorntail>2.2.0.Final</version.thorntail>
-    <version.teiid>11.2.1-SNAPSHOT</version.teiid>
+    <version.teiid>11.2.2.fuse-730010</version.teiid>
     <version.org.wildfly.core>3.0.8.Final</version.org.wildfly.core>
     <version.wildfly>11.0.0.Final</version.wildfly>
     <version.thorntail.fraction.plugin>88</version.thorntail.fraction.plugin>
@@ -353,6 +342,15 @@
 
       <build>
         <plugins>
+          <plugin>
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <extensions>true</extensions>
+            <configuration>
+              <nexusUrl>https://repository.jboss.org/nexus</nexusUrl>
+              <serverId>fusesource-nexus-staging</serverId>
+            </configuration>
+          </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
